@@ -3,44 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blok Anketi</title>
+    <title>Blog Siteniz - Anket</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Blok Anketi</h1>
-    <form>
-        <fieldset>
-            <legend>1. Hangi tür aktiviteleri daha çok tercih edersiniz?</legend>
-            <label><input type="radio" name="aktivite" value="A"> Açık hava etkinlikleri</label><br>
-            <label><input type="radio" name="aktivite" value="B"> Kapalı alan etkinlikleri</label><br>
-            <label><input type="radio" name="aktivite" value="C"> Sanatsal aktiviteler</label><br>
-            <label><input type="radio" name="aktivite" value="D"> Teknoloji ve oyunlar</label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>2. En çok hangi konuda bilgi edinmek istersiniz?</legend>
-            <label><input type="radio" name="bilgi" value="A"> Kişisel gelişim</label><br>
-            <label><input type="radio" name="bilgi" value="B"> Sağlık ve spor</label><br>
-            <label><input type="radio" name="bilgi" value="C"> Sanat ve kültür</label><br>
-            <label><input type="radio" name="bilgi" value="D"> Bilim ve teknoloji</label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>3. Boş zamanlarınızı nasıl değerlendirirsiniz?</legend>
-            <label><input type="radio" name="zaman" value="A"> Kitap okuyarak</label><br>
-            <label><input type="radio" name="zaman" value="B"> Film/dizi izleyerek</label><br>
-            <label><input type="radio" name="zaman" value="C"> Spor yaparak</label><br>
-            <label><input type="radio" name="zaman" value="D"> Arkadaşlarla vakit geçirerek</label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>4. Sosyal medyayı ne sıklıkla kullanıyorsunuz?</legend>
-            <label><input type="radio" name="sosyalMedya" value="A"> Her gün</label><br>
-            <label><input type="radio" name="sosyalMedya" value="B"> Haftada birkaç kez</label><br>
-            <label><input type="radio" name="sosyalMedya" value="C"> Ayda bir</label><br>
-            <label><input type="radio" name="sosyalMedya" value="D"> Nadir kullanıyorum</label>
-        </fieldset>
-        
-        <button type="submit">Gönder</button>
-    </form>
+    <header>
+        <h1>Blog Siteniz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkinda.html">Hakkında</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="anket.html">Anket</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Anket</h2>
+        <p>Anketinizi buraya ekleyebilirsiniz.</p>
+        <form>
+            <label for="feedback">Geri bildiriminizi buraya yazın:</label><br>
+            <textarea id="feedback" name="feedback"></textarea><br>
+            <input type="submit" value="Gönder">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blog Siteniz. Tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
